@@ -1,0 +1,25 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "A recipe finder website",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadekhosravi/forkify.git"
+  },
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "Mohammad Khosravi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohammadekhosravi/forkify/issues"
+  },
+  "homepage": "https://github.com/mohammadekhosravi/forkify#readme",
+  "devDependencies": {
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
+  }
+}
