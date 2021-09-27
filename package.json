@@ -1,24 +1,28 @@
 {
-  "name": "forkify",
-  "version": "1.0.0",
-  "description": "A recipe finder website",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohammadekhosravi/forkify.git"
+  "private": "true",
+  "scripts": {
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "NODE_ENV=production webpack",
+    "build-dev": "webpack",
+    "stats": "STATS=server webpack",
+    "clean": "rm -rf dist"
   },
-  "keywords": [
-    "Javascript"
-  ],
-  "author": "Mohammad Khosravi",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mohammadekhosravi/forkify/issues"
-  },
-  "homepage": "https://github.com/mohammadekhosravi/forkify#readme",
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.3.0",
+    "postcss": "^8.3.8",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
     "webpack": "^5.54.0",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.0"
   }
