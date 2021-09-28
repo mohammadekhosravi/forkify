@@ -27,7 +27,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: "./index.html",
     }),
   ],
   // There are different option for this but usually this is the best.
@@ -58,6 +58,10 @@ module.exports = {
           "postcss-loader",
           "sass-loader"
         ],
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
       },
     ],
   },

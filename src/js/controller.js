@@ -1,4 +1,5 @@
 import "../sass/main.scss";
+import "../../index.html";
 
 const recipeContainer = document.querySelector('.recipe');
 
