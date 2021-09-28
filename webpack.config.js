@@ -74,5 +74,8 @@ module.exports = {
         directory: path.join(__dirname, 'dist'),
       },
     ],
+    client: {
+      logging: 'none',
+    },
   },
 };
