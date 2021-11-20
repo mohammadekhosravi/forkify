@@ -76,7 +76,12 @@ const controlAddBookamrk = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
+const controlBookamrs = function () {
+  bookmarksView.render(model.state.bookmarks);
+};
+
 const init = function () {
+  bookmarksView.addHandlerRender(controlBookamrs);
   recipeView.addHandlerRender(controlRecipe);
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookamrk);
